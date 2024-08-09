@@ -1,6 +1,6 @@
 <!-- jameezNetlifies0| -->
 <h3>Compare two ethnicities' similarity.</h3>
-<h6><i>v0.62</i></h6>
+<h6><i style="padding:0;margin:0;">v0.64</i></h6>
 <select name="ethnicity1" id="ethnicity1">
 	<option value="ARM">Armenians</option>
 	<option value="AZER">Azerbaijanis</option>
@@ -38,7 +38,7 @@
 	<option value="SYRIA">Syrians</option>
 </select>
 <button onclick="compare()">Compare!</button>
-<p>DNA Similarity:<span id="similarity"></span>%</p>
+<p>DNA Similarity: <span id="similarity"></span><span id="percent" style="display:hidden;">%</span></p>
 
 <script>
 	function compare(){
@@ -100,8 +100,9 @@
 			for(i=0;i<mdv.length;i++){
 				sum += mdv[i]
 			}
-			console.log("sum")
+			console.log(sum)
 			document.getElementById("similarity").innerHTML = sum
+			document.getElementById("percent").style.display = "inline"
 		})
 		.catch((e) => console.error(e))
 }
