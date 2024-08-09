@@ -229,3 +229,48 @@ G 2
 J1 1
 T 1
 L 1
+
+POL
+R1a 56
+I 17
+R1b 14
+E1b 4
+N 3
+Other 3
+J 1
+G 1
+L 1
+
+SICILY
+E1b 25
+R1b 24
+J2 24
+I 9
+G 8
+T 4
+Other 2
+R1a 2
+L 2
+
+ITASOUTH
+J2 28
+R1b 24
+E1b 24
+G 11
+I 8
+R1a 3
+T 2
+
+ITANORTH
+R1b 62
+J2 27
+E1b 10
+I 1
+
+ITA
+R1b 62
+E1b 13
+G 10
+I 8
+Other 4
+R1a 3
