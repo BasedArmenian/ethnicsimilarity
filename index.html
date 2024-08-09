@@ -1,5 +1,4 @@
 <!-- jameezNetlifies0| -->
-<html>
 <h3>Compare two ethnicities' similarity.</h3>
 <select name="ethnicity1" id="ethnicity1">
 	<option value="ARM">Armenians</option>
@@ -16,7 +15,7 @@
 	<option value="RUSCENTER">Russians (Center)</option>
 	<option value="RUSNORTH">Russians (North)</option>
 	<option value="RUSSOUTH">Russians (South)</option>
-	<option value="RUS">Russians (Overall)</options)
+	<option value="RUS">Russians (Overall)</option>
 	<option value="SYRIA">Syrians</option>
 </select>
 <select name="ethnicity2" id="ethnicity2">
@@ -38,6 +37,68 @@
 	<option value="SYRIA">Syrians</option>
 </select>
 <button onclick="compare()">Compare!</button>
-</html>
+
 <script>
+	function compare(){
+	ethn1 = document.getElementById("ethnicity1").value
+	ethn2 = document.getElementById("ethnicity2").value
+
+	set1 = {}; set2 = {}
+
+	fetch("edna.txt")
+		.then((res) => res.text())
+		.then((text) => {
+			eDNAlines = text.split("\n")
+			ethn1line = 0;ethn2line = 0
+
+			for(i=0;i<len(eDNAlines);i++){
+				if(eDNAlines[i] == ethn1){
+					ethn1line = i
+				}
+			}
+
+			for(i=0;i<len(eDNAlines);i++){
+				if(eDNAlines[i] == ethn2){
+					ethn2line = i
+				}
+			}
+
+			x = ethn1line + 1
+			while(eDNAlines[x]!=""){
+				eDNAval = eDNAlines[x].split(" ")
+				set1[eDNAval[0]] = eDNAval[1]
+				x+=1
+			}
+			x = ethn2line + 1
+			while(eDNAlines[x]!=""){
+				eDNAval = eDNAlines[x].split(" ")
+				set2[eDNAval[0]] = eDNAval[1]
+				x+=1
+			}
+
+			set1keys = set1.keys().from()
+			set2keys = set2.keys().from()
+			matchingkeys = []
+			matchingdict = {}
+
+			for(i=0;i<len(set1keys);i++){
+				for(j=0;j<len(set2keys);j++){
+					if(set1keys[i] == set2keys[j]){
+						matchingkeys.append(set1keys[i])
+					}
+				}
+			}
+			for(i=0;i<len(matchingkeys);i++){
+				matchingdict[matchingkeys[i]] = Math.min(parseInt(set1[matchingkeys[1]]), parseInt(set2[matchingkeys[1]]))
+			}
+			console.log(matchingdict)
+
+			mdv = matchingdict.values()
+			for(i=0;i<len(mdv);i++){
+				sum += mdv[i]
+			}
+			console.log(sum)
+		})
+		.catch((e) => console.error(e))
+}
 </script>
