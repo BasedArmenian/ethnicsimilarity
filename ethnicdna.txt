@@ -178,3 +178,51 @@ Other 6
 J1 3
 J2 3
 
+UKR
+R1b 43
+I 27
+R1a 8
+E1b 8
+N 5
+J2 3
+G 3
+Other 1
+J1 1
+T 1
+
+ALB
+E1b 34
+J2 21
+R1b 18
+I 15
+R1a 5
+Other 4
+G 2
+T 1
+
+ASHKEN
+J2 22
+E1b 17
+J1 16
+R1b 11
+G 10
+R2 6
+Q 5
+R1a 5
+I 3
+T 3
+L 1
+N 1
+
+BEL
+R1a 48
+I 22
+N 9
+E1b 5
+Other 5
+R1b 4
+J2 2
+G 2
+J1 1
+T 1
+L 1
