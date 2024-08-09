@@ -1,7 +1,7 @@
 <!-- jameezNetlifies0| -->
 <h3>Compare two ethnicities' similarity.</h3>
-<h6><i style="padding:0;margin:0;">v0.74</i></h6>
-<select name="ethnicity1" id="ethnicity1">
+<h6><i style="padding:0;margin:0;">v0.64</i></h6>
+<select name="ethnicity1" id="ethnicity1" onchange="compare()">
 	<option value="ALB">Albanians</option>
 	<option value="ARM">Armenians</option>
 	<option value="AZER">Azerbaijanis</option>
@@ -23,7 +23,7 @@
 	<option value="SYRIA">Syrians</option>
 	<option value="UKR">Ukrainians</option>
 </select>
-<select name="ethnicity2" id="ethnicity2">
+<select name="ethnicity2" id="ethnicity2" onchange="compare()">
 	<option value="ALB">Albanians</option>
 	<option value="ARM">Armenians</option>
 	<option value="AZER">Azerbaijanis</option>
@@ -45,7 +45,6 @@
 	<option value="SYRIA">Syrians</option>
 	<option value="UKR">Ukrainians</option>
 </select>
-<button onclick="compare()">Compare!</button>
 <p>DNA Similarity: <span id="similarity"></span><span id="percent" style="display:hidden;">%</span></p>
 
 <script>
