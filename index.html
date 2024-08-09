@@ -1,7 +1,23 @@
-<!-- jameezNetlifies0| -->
-<h3>Compare two ethnicities' similarity.</h3>
-<h6><i style="padding:0;margin:0;">v0.64</i></h6>
+<head>
+<style>
+	.lw { font-size: 60px; }
+	#ethnicity1,#ethnicity2{
+		text-align: center;
+        width: 49.7%;
+	}
+	#dnasp,#simlp{
+    text-align:center;
+	}	
+	#simlp{
+    font-size: 50px;
+	}
+	</style>
+</head>
+<body>
+<h3 style="text-align: center;">COMPARE TWO ETHNICITIES' SIMILARITY</h3>
+<h6><i style="padding:0;margin:0;position:absolute;top:0;left:0;">v1.15</i></h6>
 <select name="ethnicity1" id="ethnicity1" onchange="compare()">
+    <option value="NONE">Select</option>
 	<option value="ALB">Albanians</option>
 	<option value="ARM">Armenians</option>
 	<option value="AZER">Azerbaijanis</option>
@@ -24,6 +40,7 @@
 	<option value="UKR">Ukrainians</option>
 </select>
 <select name="ethnicity2" id="ethnicity2" onchange="compare()">
+    <option value="NONE">Select</option>
 	<option value="ALB">Albanians</option>
 	<option value="ARM">Armenians</option>
 	<option value="AZER">Azerbaijanis</option>
@@ -45,8 +62,9 @@
 	<option value="SYRIA">Syrians</option>
 	<option value="UKR">Ukrainians</option>
 </select>
-<p>DNA Similarity: <span id="similarity"></span><span id="percent" style="display:hidden;">%</span></p>
-
+<p id="dnasp">DNA Similarity</p>
+<p id="simlp"><span id="similarity">100</span><span id="percent">%</span></p>
+</body>
 <script>
 	function compare(){
 	ethn1 = document.getElementById("ethnicity1").value
@@ -114,3 +132,4 @@
 		.catch((e) => console.error(e))
 }
 </script>
+</body>
