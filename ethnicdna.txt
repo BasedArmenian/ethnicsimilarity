@@ -1,0 +1,180 @@
+ARM
+R1b 29
+J2 26
+J1 11
+G 9
+T 9
+R2 5
+I 4
+Other 3
+L 2
+R1a 2
+
+TURK
+J2 32
+R1b 18
+E1b 11
+G 11
+R1a 8
+I 5
+L 4
+Other 3
+N 3
+T 2
+Q 2
+C 1
+
+AZER
+J2 27
+G 18
+J1 15
+R1b 11
+L 7
+R1a 7
+E1b 4
+T 4
+I 3
+R2 3
+Other 1
+
+GREEKMAIN
+E1b 29
+R1b 17
+J2 15
+I 15
+R1a 11
+G 6
+Other 3
+T 2
+L 2
+
+CRETE
+J2 30
+E1b 20
+R1b 15
+I 14
+R1a 10
+G 8
+T 2
+Other 1
+
+RUSNORTH
+R1a 54
+N 25
+R1b 12
+I 7
+J 1
+G 1
+
+RUSCENTER
+R1a 50
+I 15
+N 15
+R1b 8
+Other 5
+E1b 4
+J 3
+
+RUSSOUTH
+R1a 59
+I 21
+N 8
+R1b 5
+J 3
+Other 2
+E1b 1
+G 1
+
+RUS
+R1a 48
+I 17
+N 15
+R1b 7
+E1b 5
+Other 4
+J 2
+G 2
+
+KART
+J2 34
+G 31
+R1b 12
+R1a 9
+J1 5
+E1b 3
+R2 3
+I 1
+L 1
+T 1
+
+PERS
+J2 25
+R1a 14
+G 12
+J1 8
+E1b 8
+R1b 7
+Q 6
+T 5
+R2 5
+Other 5
+L 4
+I 1
+
+SYRIA
+J2 51
+E1b 14
+G 6
+R1b 6
+R1a 6
+Other 5
+J1 5
+I 5
+L 1
+T 1
+
+PONT
+J2 23
+G 19
+L 18
+R1b 10
+J1 10
+I 6
+E1b 6
+T 4
+R1a 2
+
+BASQUE
+R1b 88
+I 7
+E1b 2
+J1 3
+
+DEUTSCH
+R1b 44
+R1a 12
+I 20
+E1b 5
+J1 3
+J2 3
+G 5
+Other 5
+N 1
+T 1
+L 1
+
+IRISH
+R1b 82
+I 15
+E1b 2
+R1a 1
+
+FRANCAIS
+R1b 53
+I 18
+E1b 9
+R1a 8
+Other 6
+J1 3
+J2 3
+
