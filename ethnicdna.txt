@@ -275,3 +275,29 @@ I 8
 Other 4
 R1a 3
 
+NORW
+I 40
+R1b 26
+R1a 23
+N 4
+Q 3
+E1b 2
+J 2
+
+SWE
+I 45
+R1a 21
+R1b 18
+N 5
+G 3
+Q 3
+Other 3
+J2 1
+E1b 1
+
+FIN
+N 63
+I 27
+R1a 8
+E1b 1
+R1b 1
